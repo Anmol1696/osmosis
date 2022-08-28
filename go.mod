@@ -18,6 +18,7 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.15
 	github.com/ory/dockertest/v3 v3.9.1
 	github.com/osmosis-labs/go-mutesting v0.0.0-20220811235203-65a53b4ea8e3
+	github.com/osmosis-labs/osmosis/v11/x/epochs v0.0.0-00010101000000-000000000000
 	github.com/pkg/errors v0.9.1
 	github.com/rakyll/statik v0.1.7
 	github.com/spf13/cast v1.5.0
@@ -277,7 +278,6 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.12 // indirect
 	google.golang.org/protobuf v1.28.1
-	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/ini.v1 v1.66.6 // indirect
 	gopkg.in/yaml.v3 v3.0.1
 	honnef.co/go/tools v0.3.3 // indirect
@@ -298,4 +298,5 @@ replace (
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	// use grpc compatible with cosmos protobufs
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
+	github.com/osmosis-labs/osmosis/v11/x/epochs => ./x/epochs
 )
