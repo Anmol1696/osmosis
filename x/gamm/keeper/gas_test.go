@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/pool-models/balancer"
-	balancertypes "github.com/osmosis-labs/osmosis/v11/x/gamm/pool-models/balancer"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/types"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/pool-models/balancer"
+	balancertypes "github.com/Anmol1696/osmosis/v11/x/gamm/pool-models/balancer"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

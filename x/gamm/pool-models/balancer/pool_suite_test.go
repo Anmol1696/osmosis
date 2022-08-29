@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/osmosis-labs/osmosis/v11/app/apptesting"
-	"github.com/osmosis-labs/osmosis/v11/app/apptesting/osmoassert"
-	v10 "github.com/osmosis-labs/osmosis/v11/app/upgrades/v10"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/pool-models/balancer"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/types"
+	"github.com/Anmol1696/osmosis/v11/app/apptesting"
+	"github.com/Anmol1696/osmosis/v11/app/apptesting/osmoassert"
+	v10 "github.com/Anmol1696/osmosis/v11/app/upgrades/v10"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/pool-models/balancer"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/types"
 )
 
 const (
@@ -50,7 +50,8 @@ var (
 //
 // CalcJoinPoolShares calls calcSingleAssetJoin. As a result, we can reuse
 // the same test cases for unit testing both calcSingleAssetJoin and
-//  CalcJoinPoolShares with only one tokensIn.
+//
+//	CalcJoinPoolShares with only one tokensIn.
 type calcJoinSharesTestCase struct {
 	name         string
 	swapFee      sdk.Dec

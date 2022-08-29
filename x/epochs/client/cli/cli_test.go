@@ -4,9 +4,9 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/osmosis-labs/osmosis/v11/app"
-	"github.com/osmosis-labs/osmosis/v11/x/epochs/client/cli"
-	"github.com/osmosis-labs/osmosis/v11/x/epochs/types"
+	//"github.com/Anmol1696/osmosis/v11/app"
+	"github.com/Anmol1696/osmosis/v11/x/epochs/client/cli"
+	"github.com/Anmol1696/osmosis/v11/x/epochs/types"
 
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	"github.com/cosmos/cosmos-sdk/testutil/network"
@@ -22,7 +22,7 @@ type IntegrationTestSuite struct {
 func (s *IntegrationTestSuite) SetupSuite() {
 	s.T().Log("setting up integration test suite")
 
-	s.cfg = app.DefaultConfig()
+	//s.cfg = app.DefaultConfig()
 
 	s.network = network.New(s.T(), s.cfg)
 

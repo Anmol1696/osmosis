@@ -10,9 +10,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/authz"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	"github.com/osmosis-labs/osmosis/v11/app/keepers"
-	"github.com/osmosis-labs/osmosis/v11/app/upgrades"
-	txfeestypes "github.com/osmosis-labs/osmosis/v11/x/txfees/types"
+	"github.com/Anmol1696/osmosis/v11/app/keepers"
+	"github.com/Anmol1696/osmosis/v11/app/upgrades"
+	txfeestypes "github.com/Anmol1696/osmosis/v11/x/txfees/types"
 )
 
 func CreateUpgradeHandler(

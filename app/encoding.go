@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/osmosis-labs/osmosis/v11/app/params"
+	"github.com/Anmol1696/osmosis/v11/app/params"
 
 	"github.com/cosmos/cosmos-sdk/std"
 )

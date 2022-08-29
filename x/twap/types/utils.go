@@ -7,7 +7,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/osmosis-labs/osmosis/v11/osmoutils"
+	"github.com/Anmol1696/osmosis/v11/osmoutils"
 )
 
 // mustGetSpotPrice returns the spot price for the given pool id, and denom0 in terms of denom1.

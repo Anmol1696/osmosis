@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/keeper/internal/events"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/types"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/keeper/internal/events"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/types"
 )
 
 // SwapExactAmountIn attempts to swap one asset, tokenIn, for another asset

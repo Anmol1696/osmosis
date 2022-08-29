@@ -20,7 +20,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/osmosis-labs/osmosis/v11/simulation/simtypes"
+	"github.com/Anmol1696/osmosis/v11/simulation/simtypes"
 )
 
 const AverageBlockTime = 6 * time.Second
@@ -54,7 +54,8 @@ const AverageBlockTime = 6 * time.Second
 // * Config file for params
 // * whatever is needed for logging (tb + w rn)
 // OR: Could be a struct or something with options,
-//     to give caller ability to step through / instrument benchmarking if they wanted to, and add a cleanup function.
+//
+//	to give caller ability to step through / instrument benchmarking if they wanted to, and add a cleanup function.
 func SimulateFromSeed(
 	tb testing.TB,
 	w io.Writer,

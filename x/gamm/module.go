@@ -25,12 +25,12 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/osmosis-labs/osmosis/v11/simulation/simtypes"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/client/cli"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/keeper"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/pool-models/balancer"
-	simulation "github.com/osmosis-labs/osmosis/v11/x/gamm/simulation"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/types"
+	"github.com/Anmol1696/osmosis/v11/simulation/simtypes"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/client/cli"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/keeper"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/pool-models/balancer"
+	simulation "github.com/Anmol1696/osmosis/v11/x/gamm/simulation"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/types"
 )
 
 var (
@@ -67,7 +67,7 @@ func (AppModuleBasic) ValidateGenesis(cdc codec.JSONCodec, config client.TxEncod
 	return genState.Validate()
 }
 
-//---------------------------------------
+// ---------------------------------------
 // Interfaces.
 func (b AppModuleBasic) RegisterRESTRoutes(ctx client.Context, r *mux.Router) {
 }

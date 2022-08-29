@@ -1,8 +1,6 @@
-module github.com/Anmol1696/osmosis/v11/x/epochs
+module github.com/Anmol1696/osmosis/v11/app
 
 go 1.18
-
-
 
 require (
 	github.com/cosmos/cosmos-sdk v0.46.0
@@ -16,13 +14,13 @@ require (
 	golang.org/x/exp v0.0.0-20220613132600-b0d781184e0d
 	google.golang.org/genproto v0.0.0-20220725144611-272f38e5d71b
 	google.golang.org/grpc v1.48.0
-	github.com/Anmol1696/osmosis v0.0.0
+	github.com/Anmol1696/osmosis/v11/app v0.0.0
 	github.com/Anmol1696/osmosis/v11/x/epochs v0.0.0
 )
 
 replace (
-	github.com/Anmol1696/osmosis => ../../../osmosis-anmol
-	github.com/Anmol1696/osmosis/v11/x/epochs => ../epochs
+	github.com/Anmol1696/osmosis/v11/app => ../app
+	github.com/Anmol1696/osmosis/v11/x/epochs => ../x/epochs
 )
 
 require (

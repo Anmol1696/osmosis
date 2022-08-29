@@ -1,7 +1,6 @@
-module github.com/Anmol1696/osmosis/v11/x/epochs
+module github.com/Anmol1696/osmosis/v11/osmoutils
 
 go 1.18
-
 
 
 require (
@@ -21,8 +20,8 @@ require (
 )
 
 replace (
-	github.com/Anmol1696/osmosis => ../../../osmosis-anmol
-	github.com/Anmol1696/osmosis/v11/x/epochs => ../epochs
+	github.com/Anmol1696/osmosis => ../../osmosis-anmol
+	github.com/Anmol1696/osmosis/v11/x/epochs => ../x/epochs
 )
 
 require (

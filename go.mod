@@ -1,8 +1,9 @@
-module github.com/osmosis-labs/osmosis/v11
+module github.com/Anmol1696/osmosis/v11
 
 go 1.18
 
 require (
+	github.com/Anmol1696/osmosis/v11/x/epochs v0.0.0
 	github.com/CosmWasm/wasmd v0.27.0
 	github.com/cosmos/cosmos-proto v1.0.0-alpha7
 	github.com/cosmos/cosmos-sdk v0.46.0
@@ -18,7 +19,6 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.15
 	github.com/ory/dockertest/v3 v3.9.1
 	github.com/osmosis-labs/go-mutesting v0.0.0-20220811235203-65a53b4ea8e3
-	github.com/osmosis-labs/osmosis/v11/x/epochs v0.0.0-00010101000000-000000000000
 	github.com/pkg/errors v0.9.1
 	github.com/rakyll/statik v0.1.7
 	github.com/spf13/cast v1.5.0
@@ -288,6 +288,7 @@ require (
 )
 
 replace (
+	github.com/Anmol1696/osmosis/v11/x/epochs => ./x/epochs
 	// branch: v0.27.0.rc3-osmo, current tag: v0.27.0.rc3-osmo
 	github.com/CosmWasm/wasmd => github.com/osmosis-labs/wasmd v0.27.0-rc2.0.20220517191021-59051aa18d58
 	// Our cosmos-sdk branch is:  https://github.com/osmosis-labs/cosmos-sdk, current branch: osmosis-main. Direct commit link: https://github.com/osmosis-labs/cosmos-sdk/commit/5c9a51c277d067e0ec5cf48df30a85fae95bcd14
@@ -298,5 +299,4 @@ replace (
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	// use grpc compatible with cosmos protobufs
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
-	github.com/osmosis-labs/osmosis/v11/x/epochs => ./x/epochs
 )

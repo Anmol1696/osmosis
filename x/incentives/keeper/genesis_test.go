@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	osmoapp "github.com/osmosis-labs/osmosis/v11/app"
+	osmoapp "github.com/Anmol1696/osmosis/v11/app"
 
-	"github.com/osmosis-labs/osmosis/v11/x/incentives/types"
-	lockuptypes "github.com/osmosis-labs/osmosis/v11/x/lockup/types"
+	"github.com/Anmol1696/osmosis/v11/x/incentives/types"
+	lockuptypes "github.com/Anmol1696/osmosis/v11/x/lockup/types"
 )
 
 // TestIncentivesExportGenesis tests export genesis command for the incentives module.

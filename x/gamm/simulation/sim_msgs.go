@@ -8,11 +8,11 @@ import (
 
 	legacysimulationtype "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/osmosis-labs/osmosis/v11/osmoutils"
-	"github.com/osmosis-labs/osmosis/v11/simulation/simtypes"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/keeper"
-	balancertypes "github.com/osmosis-labs/osmosis/v11/x/gamm/pool-models/balancer"
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/types"
+	"github.com/Anmol1696/osmosis/v11/osmoutils"
+	"github.com/Anmol1696/osmosis/v11/simulation/simtypes"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/keeper"
+	balancertypes "github.com/Anmol1696/osmosis/v11/x/gamm/pool-models/balancer"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/types"
 )
 
 var PoolCreationFee = sdk.NewInt64Coin("stake", 10_000_000)

@@ -1,6 +1,8 @@
 package v12
 
 import (
+	gammtypes "github.com/Anmol1696/osmosis/v11/x/gamm/types"
+	superfluidtypes "github.com/Anmol1696/osmosis/v11/x/superfluid/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
@@ -9,12 +11,10 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 	icahosttypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	gammtypes "github.com/osmosis-labs/osmosis/v11/x/gamm/types"
-	superfluidtypes "github.com/osmosis-labs/osmosis/v11/x/superfluid/types"
 
-	"github.com/osmosis-labs/osmosis/v11/app/keepers"
-	"github.com/osmosis-labs/osmosis/v11/app/upgrades"
-	twaptypes "github.com/osmosis-labs/osmosis/v11/x/twap/types"
+	"github.com/Anmol1696/osmosis/v11/app/keepers"
+	"github.com/Anmol1696/osmosis/v11/app/upgrades"
+	twaptypes "github.com/Anmol1696/osmosis/v11/x/twap/types"
 )
 
 // We set the app version to pre-upgrade because it will be incremented by one
@@ -30,7 +30,7 @@ func CreateUpgradeHandler(
 	return func(ctx sdk.Context, plan upgradetypes.Plan, fromVM module.VersionMap) (module.VersionMap, error) {
 		// Although the app version was already set during the v9 upgrade, our v10 was a fork and
 		// v11 was decided to be limited to the "gauge creation minimum fee" change only:
-		// https://github.com/osmosis-labs/osmosis/pull/2202
+		// https://github.com/Anmol1696/osmosis/pull/2202
 		//
 		// As a result, the upgrade handler was not executed to increment the app version.
 		// This change helps to correctly set the app version for v12.
@@ -41,7 +41,7 @@ func CreateUpgradeHandler(
 		// Set the max_age_num_blocks in the evidence params to reflect the 14 day
 		// unbonding period.
 		//
-		// Ref: https://github.com/osmosis-labs/osmosis/issues/1160
+		// Ref: https://github.com/Anmol1696/osmosis/issues/1160
 		cp := bpm.GetConsensusParams(ctx)
 		if cp != nil && cp.Evidence != nil {
 			evParams := cp.Evidence

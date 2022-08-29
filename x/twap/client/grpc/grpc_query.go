@@ -1,4 +1,4 @@
-package grpc 
+package grpc
 
 // THIS FILE IS GENERATED CODE, DO NOT EDIT
 // SOURCE AT `proto/osmosis/twap/v1beta1/query.yml`
@@ -9,9 +9,9 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
+	"github.com/Anmol1696/osmosis/v11/x/twap/client"
+	"github.com/Anmol1696/osmosis/v11/x/twap/client/queryproto"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/osmosis-labs/osmosis/v11/x/twap/client"
-	"github.com/osmosis-labs/osmosis/v11/x/twap/client/queryproto"
 )
 
 type Querier struct {

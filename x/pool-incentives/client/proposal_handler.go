@@ -1,8 +1,8 @@
 package client
 
 import (
-	"github.com/osmosis-labs/osmosis/v11/x/pool-incentives/client/cli"
-	"github.com/osmosis-labs/osmosis/v11/x/pool-incentives/client/rest"
+	"github.com/Anmol1696/osmosis/v11/x/pool-incentives/client/cli"
+	"github.com/Anmol1696/osmosis/v11/x/pool-incentives/client/rest"
 
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 )

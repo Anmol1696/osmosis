@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/osmosis-labs/osmosis/v11/x/gamm/types"
+	"github.com/Anmol1696/osmosis/v11/x/gamm/types"
 	"gopkg.in/yaml.v2"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -24,7 +24,7 @@ func (pa PoolAsset) validateWeight() error {
 	}
 
 	// TODO: add validation for asset weight overflow:
-	// https://github.com/osmosis-labs/osmosis/issues/1958
+	// https://github.com/Anmol1696/osmosis/issues/1958
 
 	return nil
 }

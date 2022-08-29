@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	gammcli "github.com/osmosis-labs/osmosis/v11/x/gamm/client/cli"
+	gammcli "github.com/Anmol1696/osmosis/v11/x/gamm/client/cli"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

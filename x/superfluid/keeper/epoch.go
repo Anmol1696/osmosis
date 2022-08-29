@@ -7,18 +7,18 @@ import (
 
 	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 
-	"github.com/osmosis-labs/osmosis/v11/osmoutils"
-	gammtypes "github.com/osmosis-labs/osmosis/v11/x/gamm/types"
-	incentivestypes "github.com/osmosis-labs/osmosis/v11/x/incentives/types"
-	lockuptypes "github.com/osmosis-labs/osmosis/v11/x/lockup/types"
-	"github.com/osmosis-labs/osmosis/v11/x/superfluid/types"
+	"github.com/Anmol1696/osmosis/v11/osmoutils"
+	gammtypes "github.com/Anmol1696/osmosis/v11/x/gamm/types"
+	incentivestypes "github.com/Anmol1696/osmosis/v11/x/incentives/types"
+	lockuptypes "github.com/Anmol1696/osmosis/v11/x/lockup/types"
+	"github.com/Anmol1696/osmosis/v11/x/superfluid/types"
 )
 
 func (k Keeper) AfterEpochEnd(ctx sdk.Context, epochIdentifier string, _ int64) {
 }
 
 func (k Keeper) AfterEpochStartBeginBlock(ctx sdk.Context) {
-	// cref [#830](https://github.com/osmosis-labs/osmosis/issues/830),
+	// cref [#830](https://github.com/Anmol1696/osmosis/issues/830),
 	// the supplied epoch number is wrong at time of commit. hence we get from the info.
 	curEpoch := k.ek.GetEpochInfo(ctx, k.GetEpochIdentifier(ctx)).CurrentEpoch
 

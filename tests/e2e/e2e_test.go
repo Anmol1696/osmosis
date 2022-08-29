@@ -13,9 +13,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	coretypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	appparams "github.com/osmosis-labs/osmosis/v11/app/params"
-	"github.com/osmosis-labs/osmosis/v11/tests/e2e/configurer/config"
-	"github.com/osmosis-labs/osmosis/v11/tests/e2e/initialization"
+	appparams "github.com/Anmol1696/osmosis/v11/app/params"
+	"github.com/Anmol1696/osmosis/v11/tests/e2e/configurer/config"
+	"github.com/Anmol1696/osmosis/v11/tests/e2e/initialization"
 )
 
 func (s *IntegrationTestSuite) TestCreatePoolPostUpgrade() {
@@ -46,7 +46,7 @@ func (s *IntegrationTestSuite) TestIBCTokenTransfer() {
 
 func (s *IntegrationTestSuite) TestSuperfluidVoting() {
 	if s.skipUpgrade {
-		// TODO: https://github.com/osmosis-labs/osmosis/issues/1843
+		// TODO: https://github.com/Anmol1696/osmosis/issues/1843
 		s.T().Skip("Superfluid tests are broken when upgrade is skipped. To be fixed in #1843")
 	}
 	const walletName = "superfluid-wallet"
