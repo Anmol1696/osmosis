@@ -3,13 +3,14 @@ module github.com/Anmol1696/osmosis/v11
 go 1.18
 
 require (
+	github.com/Anmol1696/osmosis/v11/app v0.0.0
+	github.com/Anmol1696/osmosis/v11/osmoutils v0.0.0
 	github.com/Anmol1696/osmosis/v11/x/epochs v0.0.0
 	github.com/CosmWasm/wasmd v0.27.0
 	github.com/cosmos/cosmos-proto v1.0.0-alpha7
 	github.com/cosmos/cosmos-sdk v0.46.0
 	github.com/cosmos/go-bip39 v1.0.0
 	github.com/cosmos/iavl v0.19.0
-	github.com/cosmos/ibc-go/v3 v3.2.0
 	github.com/gogo/protobuf v1.3.3
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.2
@@ -37,6 +38,7 @@ require (
 
 require (
 	github.com/alingse/asasalint v0.0.11 // indirect
+	github.com/cosmos/ibc-go/v3 v3.2.0 // indirect
 	github.com/creachadair/taskgroup v0.3.2 // indirect
 	github.com/sashamelentyev/usestdlibvars v1.8.0 // indirect
 	github.com/sivchari/nosnakecase v1.7.0 // indirect
@@ -288,6 +290,8 @@ require (
 )
 
 replace (
+	github.com/Anmol1696/osmosis/v11/app => ./app
+	github.com/Anmol1696/osmosis/v11/osmoutils => ./osmoutils
 	github.com/Anmol1696/osmosis/v11/x/epochs => ./x/epochs
 	// branch: v0.27.0.rc3-osmo, current tag: v0.27.0.rc3-osmo
 	github.com/CosmWasm/wasmd => github.com/osmosis-labs/wasmd v0.27.0-rc2.0.20220517191021-59051aa18d58

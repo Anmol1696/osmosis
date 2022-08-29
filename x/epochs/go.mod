@@ -2,9 +2,9 @@ module github.com/Anmol1696/osmosis/v11/x/epochs
 
 go 1.18
 
-
-
 require (
+	github.com/Anmol1696/osmosis/v11/app v0.0.0
+	github.com/Anmol1696/osmosis/v11/osmoutils v0.0.0
 	github.com/cosmos/cosmos-sdk v0.46.0
 	github.com/gogo/protobuf v1.3.3
 	github.com/golang/protobuf v1.5.2
@@ -16,12 +16,12 @@ require (
 	golang.org/x/exp v0.0.0-20220613132600-b0d781184e0d
 	google.golang.org/genproto v0.0.0-20220725144611-272f38e5d71b
 	google.golang.org/grpc v1.48.0
-	github.com/Anmol1696/osmosis v0.0.0
-	github.com/Anmol1696/osmosis/v11/x/epochs v0.0.0
 )
 
 replace (
-	github.com/Anmol1696/osmosis => ../../../osmosis-anmol
+	github.com/Anmol1696/osmosis => ./../../
+	github.com/Anmol1696/osmosis/v11/app => ../../app
+	github.com/Anmol1696/osmosis/v11/osmoutils => ../../osmoutils
 	github.com/Anmol1696/osmosis/v11/x/epochs => ../epochs
 )
 
@@ -33,7 +33,6 @@ require (
 	github.com/creachadair/taskgroup v0.3.2 // indirect
 	github.com/nxadm/tail v1.4.8 // indirect
 	github.com/onsi/gomega v1.19.0 // indirect
-	github.com/osmosis-labs/bech32-ibc v0.3.0-rc1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rakyll/statik v0.1.7 // indirect
 	github.com/rogpeppe/go-internal v1.8.1 // indirect
@@ -48,6 +47,7 @@ require (
 	filippo.io/edwards25519 v1.0.0-beta.2 // indirect
 	github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4 // indirect
 	github.com/99designs/keyring v1.2.1 // indirect
+	github.com/Anmol1696/osmosis/v11 v11.0.0-20220829050212-81f7004d4a76 // indirect
 	github.com/ChainSafe/go-schnorrkel v0.0.0-20200405005733-88cbf1b4c40d // indirect
 	github.com/CosmWasm/wasmvm v1.0.0 // indirect
 	github.com/Workiva/go-datastructures v1.0.53 // indirect
@@ -60,6 +60,7 @@ require (
 	github.com/coinbase/rosetta-sdk-go v0.7.0 // indirect
 	github.com/confio/ics23/go v0.7.0 // indirect
 	github.com/cosmos/btcutil v1.0.4 // indirect
+	github.com/cosmos/cosmos-proto v1.0.0-alpha7 // indirect
 	github.com/cosmos/gorocksdb v1.2.0 // indirect
 	github.com/cosmos/ledger-cosmos-go v0.11.1 // indirect
 	github.com/cosmos/ledger-go v0.9.2 // indirect
